@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "ladd-exatech-mms-client",
+    "slug": "ladd-exatech-mms-client",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "L'application souhaite accéder à vos photos"
+        }
+      ]
+    ],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.laddexatechmmsclient"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "versionCode": 1,
+      "package": "com.anonymous.laddexatechmmsclient"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "webSocketServer": "ws://192.168.1.6:3073/_expo/ws",
+      "backgroundColor": "#ffffff"
+    }
+  }
+}
